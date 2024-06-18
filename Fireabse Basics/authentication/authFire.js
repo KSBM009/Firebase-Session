@@ -4,7 +4,6 @@ import { app } from "./firebaseConfig.js";
 const auth = getAuth();
 
 function createUser(){
-
     const  email = document.getElementById("email").value;
     const password = document.getElementById("password").value;
     
@@ -26,7 +25,7 @@ document.getElementById("createUser").addEventListener("click", createUser);
 
 async function signIn(){
     
-    const  email = document.getElementById("email").value;
+    const email = document.getElementById("email").value;
     const password = document.getElementById("password").value;
     const signInText = document.getElementById("status");
 
@@ -48,45 +47,3 @@ async function signIn(){
 }
 
 document.getElementById("signIn").addEventListener("click",signIn);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
